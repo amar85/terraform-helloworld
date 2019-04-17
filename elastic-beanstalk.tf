@@ -37,7 +37,7 @@ resource "aws_s3_bucket_object" "bucketObject" {
 }
 
 # Create a Beanstalk Application Version that can be deployed to a Beanstalk Environment.
-resource "aws_elastic_beanstalk_application_version" "ssfdataV1" {
+resource "aws_elastic_beanstalk_application_version" "node-expressV1" {
   name        = "node-expressV1"
   application = "${aws_elastic_beanstalk_application.demo-express.id}"
   description = "application version created by terraform"
